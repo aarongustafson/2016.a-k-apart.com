@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*------------------------------------*    $VENDORS
+	Other people’s code
+\*------------------------------------*/
+/*------------------------------------*    $HELPERS
+	SASS Tools
+\*------------------------------------*/
+/*------------------------------------*    Configuration
+\*------------------------------------*/
+/*	Debug controls
+	========================================================================== */
+/*	Legacy support
+	========================================================================== */
+/*	Browser defaults
+	========================================================================== */
+/*------------------------------------*    Functions
+\*------------------------------------*/
+/*------------------------------------*    Variables
+\*------------------------------------*/
+/*	URLs
+	========================================================================== */
+/*	Breakpoint Management
+	========================================================================== */
+/*	Grid Management
+	========================================================================== */
+/*	Typography
+	========================================================================== */
+/*	Colors
+	========================================================================== */
+/*	Images
+	========================================================================== */
+/*	Defaults
+	========================================================================== */
+/*	Other Config
+	========================================================================== */
+/*------------------------------------*    Mixins
+\*------------------------------------*/
+/*------------------------------------*    Placeholders
+\*------------------------------------*/
+@media (min-width: 60em) {
+  .admin {
+    width: 60rem; } }
+
+.admin h1 {
+  text-transform: capitalize; }
+
+.admin h2 {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+.admin table {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%; }
+
+.admin th, .admin td {
+  border: 1px solid;
+  padding: .5em 1em;
+  white-space: nowrap;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top; }
+
+.admin thead {
+  background: #069;
+  color: #fff; }
+  .admin thead th {
+    font-weight: bold;
+    border-color: #232323; }
+
+.admin tbody th {
+  white-space: normal; }
+
+.admin table form {
+  display: inline; }
+
+.admin input {
+  margin: 0; }
+
+.admin button {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0.3438rem; }
+
+.admin [name=screenshot] + button {
+  float: right;
+  margin-top: 0.6875rem; }
+
+.admin .project__meta {
+  font-style: italic; }
+  .admin .project__meta b {
+    font-weight: normal;
+    display: inline; }
+
+.admin .project__description {
+  margin-top: 0.6875rem;
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
+
+.admin .project__votes {
+  margin-top: 0.6875rem; }
+
+.admin [role="alert"] {
+  border: 2px solid red;
+  border-width: 2px 0;
+  background: #ff9999;
+  padding: .5em;
+  margin: .5em 0; }
